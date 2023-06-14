@@ -4,9 +4,9 @@ This project is a simple HTML website that showcases my skills as a web develope
 
 ## Features
 
-- Responsive design
-- Interactive navigation menu
-- Image gallery with lightbox effect
+- css design
+-  menu
+- Images
 
 ## Getting Started
 
