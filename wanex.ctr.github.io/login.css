@@ -1,0 +1,88 @@
+body {
+    background-color: #eeff00;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .card {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to bottom right, #ff6600, #00ffcc);
+    transform: rotate(-45deg);
+    z-index: -1;
+  }
+  
+  .card:hover:before {
+    animation: rotate-gradient 8s linear infinite;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+  }
+  
+  .card:hover img {
+    filter: grayscale(0%);
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px #000000;
+  }
+  
+  .card p {
+    font-size: 14px;
+    margin: 20px;
+    color: #bfbfbf;
+    text-align: center;
+  }
+  
+  .button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #00ccff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #0099cc;
+  }
+  
+  @keyframes rotate-gradient {
+    0% { transform: rotate(-45deg); }
+    100% { transform: rotate(315deg); }
+  }
+  
+  
